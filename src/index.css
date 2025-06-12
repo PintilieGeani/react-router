@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+header{
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    padding: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+ul li {
+    margin: 0 20px;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.active{
+    border: 1px solid white;
+    padding: 5px;
+}
+
+
+
+/* Main */
+.row{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+    border: 1px solid black;
+    width: calc((100% - (10px*3)) / 4);
+}
+
