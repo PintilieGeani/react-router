@@ -24,7 +24,7 @@ return (
           <div className="card">
             <h3>Titolo: {curBlog.title}</h3>
             <h4>Autore: {curBlog.author}</h4>
-            <p>Evito di fare il map perchè la pagina diventerebbe enorme</p>
+            <p>Evito di fare il map perchè la pagina diventerebbe veramente enorme</p>
             <Link to = {`${curBlog.id}`}>Vedi dettagli</Link>
           </div>
           
