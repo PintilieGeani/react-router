@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
 
@@ -24,7 +25,9 @@ return (
             <h3>Titolo: {curBlog.title}</h3>
             <h4>Autore: {curBlog.author}</h4>
             <p>Evito di fare il map perchè la pagina diventerebbe enorme</p>
+            <Link to = {`${curBlog.id}`}>Vedi dettagli</Link>
           </div>
+          
           )}
         </div>
       </main>

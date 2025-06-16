@@ -12,8 +12,13 @@ function AppHeader  () {
         },
          {
             titolo: "Blog",
-            url : "/blog"
+            url : "blog"
         },
+         {
+            titolo: "Create Blog",
+            url : "blog/createblog"
+        },
+       
     ]
     return (
     <header>
