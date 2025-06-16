@@ -1,20 +1,11 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { contextValue, apiContext } from "./context/apiContext.js"
 
 const Blog = () => {
 
-  const apiUrl = "https://67c5b4f3351c081993fb1ab6.mockapi.io/api/posts"
-  const [blogList, setBlog] = useState([])
-
-  useEffect(() => {
-    axios.get(apiUrl).then ((resp) => {
-      const BlogListApi = resp.data
-      setBlog(BlogListApi)
-    })
-  },[])
-
-  console.log(blogList)
+const {blogList, setBlog} = useContext(apiContext)
 
 return (
     <>
